@@ -2,7 +2,7 @@
 D3.js visualization for CS498 Data Visualization course final project
 
 # Live Project
-This proejct is hosted live on Github Pages at 
+This proejct is hosted live on Github Pages at https://winston86zhu.github.io/Google-Play-Review-Visualization/
 
 ## Visualization Principles
 This visualization uses interactive slideshow structure which takes the user through the Dataset of the Google Review Analysis in the year of 2019
