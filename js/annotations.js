@@ -22,7 +22,7 @@ const bubble_star_annotations = [
     type: d3.annotationLabel,
     note: {
     title: "Majority 3-4 Stars",
-    label: "Most of the reviews have ratings at 3 or 4 ",
+    label: "Most of the reviews have ratings at 3 or 4",
     wrap: 190
     },
     x: 500,
