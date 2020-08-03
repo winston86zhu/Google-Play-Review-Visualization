@@ -1,4 +1,4 @@
-# cs498-ddv-final
+# cs498-final
 D3.js visualization for CS498 Data Visualization course final project
 
 # Live Project
