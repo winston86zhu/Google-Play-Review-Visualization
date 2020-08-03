@@ -44,7 +44,7 @@ function chart(selector, csv) {
         .text("Value ($)");
 
     var z = d3.scaleOrdinal()
-        .range(["steelblue", "darkorange", "lightblue"])
+        .range(["#2ca02c", "#ff7f0e", "#aec7e8"])
         .domain(keys);
 
     update(d3.select("#year").property("value"), 0)
