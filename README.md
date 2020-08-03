@@ -2,48 +2,49 @@
 D3.js visualization for CS498 Data Visualization course final project
 
 # Live Project
-This proejct is hosted live on Github Pages at [https://stanleykylee.github.io/cs498-ddv-final](https://stanleykylee.github.io/cs498-ddv-final).
+This proejct is hosted live on Github Pages at 
 
-# About the Visualization
-This visualization is an interactive slideshow which takes the user through the Dataset of the 9th Round of the Yelp Academic Dataset Challenge. The dataset itself contains the Yelp reviews and aggregated check-ins over time of 144 thousand businesses located throughout various metropolitans across the globe. This visualization focuses on the data from the United States which includes the following cities: Pittsburgh, Charlotte, Urbana-Champaign, Phoenix, Las Vegas, Madison, Cleveland.
-
-## Recommended Settings
-As the visualizations use a preset static canvas of 1024x768 pixels, the viewing size of the interactive visualization is at least 1280x800 pixels to accommodate the surrounding text and scene elements.
-
+## Visualization Principles
+This visualization uses interactive slideshow structure which takes the user through the Dataset of the Google Review Analysis in the year of 2019
+    . The dataset itself aggregates user rating for more than 10,000 Applications from the Google Play Store. However, due to
+    the consideration of loading time, this analysis filter the data to the size of 2,000. This visualization focuses on the Content Rating
+    applied to different age groups. Inp articular, they are 18+, 15+, 7+(mature) and everyone(all-age).
+## Interactive Slideshow structure
+The pattern will investigate some tangent that you might be interested in, in our case, they will be the relayionship between
+    content rating and rate score as well as content rating verses installation numbers. Users have the freedom to
+    choose just to continue on if you're not interested in the details of that slide.
 ## Managing the Dataset
-With such a large dataset, creating a visualization with the raw data turned out to be very difficult. The first step for created this visualization was to process the dataset and focus on the data pertaining restaurants in the United States only.
-
-## Templates Scene
-The use of CSS and FullPage.js allows for a cohesive template look for the interactive visualization. Each page is transitioned using the same method and text elements are kept the same (font size and family). Additionally there is a page navigation bar on the right side which allows users to skip between different slides. The tooltips which are triggered when a user moves their mouse over the navigation alters the display parameters for each navigation menu item.
-
+With such a large dataset, creating a visualization with the raw data turned out to be very difficult. The first step for created 
+	this visualization was to process the dataset and focus on the data pertaining restaurants in the United States only.
+## Templates Structure
+ To facilitate a cohesive and smooth look for the interactive visualization, the transition is implemented to capture users' scroll activities. Additionally there is a page navigation bar to help user navigate between different pages. With mose hover on the navigation dots,
+the user can see the title of all pages alter alters the display sequence.
+This helps user better understanding the thinking pattern from the author.
 ## Annotations
-Annotations have been used in all three visualizations with a similar process of using triggers to change the hidden paramenter of the annotation. For example, the Line Chart Visualization has an initial state of the hidden parameter which controls the display of the annotations set to false. As a user uses the brush bar to trigger changes to the line chart visualization x-axis parameters, it also changes this hidden parameter to true. In turn the annotations disappear until the user resets the brush bar to zero - thus zooming out back to the default visualization parameters.
+Annotations have been used in all visualizations with a generic css pattern to annotate key findings. For example, user might get lost
+	when looking through the overview bubble chart becuase the size of data is overwhelming. Then in between of each user activities, such like
+	clicking buttons, the annotation which the author wants to convey will pop up on the screen to remind the user what the problem is.
+	Certainly, the annotation will disappear when user is performing the next activity.
 
 ## Parameters and Triggers
-Both parameters and triggers are used in all of the three visualizations. For the Bubble Chart Visualization, parameters for the x,y co-ordinates of each bubble are set to an initial central position for the All Reviews Visualization. As a user selects menu items to chose between All Reviews, Reviews by State and Reviews by Stars, it triggers the change of bubble’s x,y co-ordinates parameter to their respective groupings.
-
-In Zoomable Sunburst Visualization, each mouse click on a region is a trigger for the path and arc parameters. By clicking within a region, you can zoom into the data to take a look at the information underneath. Clicking the centre circle will trigger the parameters to return to its values one up in the hierarchy.
-
-For Line Chart Visualization, parameters are set for each Restaurant Category. These parameters are triggered to be updated as the mouse moves over the visualization, providing the user with a snapshot of the amount of check-ins in a given time. A secondary parameter and trigger set is the brush bar below the line chart. This bar allows the user to zoom into the data to show a closer look of the data. By clicking a set space on the brush bar, it triggers the x-axis parameter of the line chart to be updated to a ratio of the same selected section of the brush bar.
+Both parameters and triggers are used in all visualizations. For the Bubble Chart Visualization, parameters for the
+	x,y co-ordinates of each bubble are set to an initial central position for the All Reviews Visualization. As a user selects menu 
+	items to chose between All Reviews, Reviews by State and Reviews by Stars, it triggers the change of bubble’s x,y co-ordinates 
+	parameter to their respective groupings.
+ In the bar chart presentation, to help user partition the dataset and narrow down to the specific group of users,
+	These parameters are triggered to be updated as mouseover tooltips as well as the dropdown selection for free and paid Apps.
+	This can provide the user with a snapshot of the amount of installations for a given group. Meanwhile, the sort bar will help the
+    user to view all the bars in a sequence if they need to.
 
 # Reference Materials
-## Bubble Chart
-+ [stackoverflow question with example code](https://stackoverflow.com/questions/39368919/d3-bubble-chart-bubble-nodes-not-a-function) - [example code snippet](https://jsfiddle.net/r24e8xd7/9/)
-+ [Bubble Chart d3 v4 Github Gist by John Alexis Guerra Gomez](https://bl.ocks.org/john-guerra/0d81ccfd24578d5d563c55e785b3b40a)
-+ [Animated Bubble Chart by Jim Vallandingham](https://github.com/vlandham/bubble_chart_v4)
-+ [d3 API documents on d3-hierarchy - packs](https://github.com/d3/d3-hierarchy/blob/master/README.md#pack)
-## Geomapping
-+ [Interactive Data Visualization for the Web - Chapter 12. Geomapping by Scott Murray](http://chimera.labs.oreilly.com/books/1230000000345/ch12.html)
-+ [Basic US State Map - D3 Github Gist by Michelle Chandra](http://bl.ocks.org/michellechandra/0b2ce4923dc9b5809922)
+
+## Dataset
+
+[Google Play Data Source](https://www.kaggle.com/lava18/google-play-store-apps)
+
 ## Images
-+ [https://www.pexels.com/search/google%20play%20store/](Google Play)
-+ [https://www.pexels.com/photo/store-with-red-and-white-stripe-awnings-492803/](https://www.pexels.com/photo/store-with-red-and-white-stripe-awnings-492803/)
-+ [https://www.pexels.com/photo/person-answering-test-paper-159353/](https://www.pexels.com/photo/person-answering-test-paper-159353/)
-+ [https://www.pexels.com/photo/tea-coffee-restaurant-smartphone-481021/](https://www.pexels.com/photo/tea-coffee-restaurant-smartphone-481021/)
-+ [https://www.pexels.com/photo/wood-texture-background-pine-82256/](https://www.pexels.com/photo/wood-texture-background-pine-82256/)
-## Sunburst
-+ [https://gist.github.com/mchelen/1481545d38d0304b4d54](https://gist.github.com/mchelen/1481545d38d0304b4d54)
-+ [https://gist.github.com/mbostock/4348373](https://gist.github.com/mbostock/4348373)
-+ [https://gist.github.com/denjn5/3b74baf5edc4ac93d5e487136481c601](https://gist.github.com/denjn5/3b74baf5edc4ac93d5e487136481c601)
-## Line Chart
-+ [https://gist.github.com/DStruths/9c042e3a6b66048b5bd4](https://gist.github.com/DStruths/9c042e3a6b66048b5bd4)
+
+[Pexels - Analytics](https://www.pexels.com/photo/analytics-text-185576)
+[Pexels - Answering Test Pape](https://www.pexels.com/photo/wavelength-1093161)
+[Pexels - Wood](https://www.pexels.com/photo/wood-texture-background-pine-82256/)
+[Pexels - Essay Background(https://www.pexels.com/photo/background-board-chart-data-590041/)
