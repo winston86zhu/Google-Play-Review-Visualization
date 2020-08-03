@@ -45,6 +45,9 @@ Both parameters and triggers are used in all visualizations. For the Bubble Char
 ## Images
 
 [Pexels - Analytics](https://www.pexels.com/photo/analytics-text-185576)
+
 [Pexels - Answering Test Pape](https://www.pexels.com/photo/wavelength-1093161)
+
 [Pexels - Wood](https://www.pexels.com/photo/wood-texture-background-pine-82256/)
-[Pexels - Essay Background(https://www.pexels.com/photo/background-board-chart-data-590041/)
+
+[Pexels - Essay Background](https://www.pexels.com/photo/background-board-chart-data-590041/)
